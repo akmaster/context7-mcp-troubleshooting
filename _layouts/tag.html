@@ -3,7 +3,7 @@ layout: default
 ---
 <h1>{{ page.tag }}</h1>
 
-<p>Bu etikete sahip tüm makaleler:</p>
+<p>All articles with this tag:</p>
 
 <ul>
   {% for post in site.tags[page.tag] %}
@@ -15,7 +15,7 @@ layout: default
 </ul>
 
 <div class="tag-cloud">
-  <h2>Tüm Etiketler</h2>
+  <h2>All Tags</h2>
   {% assign tags = site.tags | sort %}
   {% for tag in tags %}
     <a href="{{ '/tags/' | append: tag[0] | relative_url }}" 

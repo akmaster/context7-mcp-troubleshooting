@@ -1,108 +1,108 @@
-# Katkıda Bulunma Rehberi
+# Contributing Guide
 
-Bu proje, Context7 MCP kurulumu ve sorun gidermesi hakkında topluluk katkılarına açıktır. Katkıda bulunmak için aşağıdaki yönergeleri izleyin.
+This project is open to community contributions regarding Context7 MCP installation and troubleshooting. Please follow these guidelines when contributing.
 
-## Nasıl Katkıda Bulunabilirsiniz?
+## How to Contribute
 
-Context7 MCP Troubleshooting projesine katkıda bulunmanın birçok yolu vardır:
+There are many ways to contribute to the Context7 MCP Troubleshooting project:
 
-### 1. Dokümantasyon İyileştirmeleri
+### 1. Documentation Improvements
 
-- Mevcut rehberlerdeki hata veya eksiklikleri düzeltme
-- Yeni kullanım senaryoları veya örnekler ekleme
-- Adım adım talimatları iyileştirme veya netleştirme
-- Dil veya formatlama düzeltmeleri
+- Fixing errors or gaps in existing guides
+- Adding new use cases or examples
+- Improving or clarifying step-by-step instructions
+- Language or formatting corrections
 
-### 2. Yeni İçerik
+### 2. New Content
 
-- Ek sorun giderme rehberleri
-- Farklı ortamlar için yapılandırma örnekleri (Linux, macOS vb.)
-- Farklı IDE'ler veya AI asistanları için entegrasyon adımları
-- Sık sorulan sorular (SSS) eklemeleri
+- Additional troubleshooting guides
+- Configuration examples for different environments (Linux, macOS, etc.)
+- Integration steps for different IDEs or AI assistants
+- Frequently Asked Questions (FAQ) additions
 
-### 3. Teknik İyileştirmeler
+### 3. Technical Improvements
 
-- Jekyll tema özelleştirmeleri
-- SEO optimizasyonları
-- Erişilebilirlik iyileştirmeleri
-- GitHub Pages işlevselliği eklemeleri
+- Jekyll theme customizations
+- SEO optimizations
+- Accessibility improvements
+- GitHub Pages functionality enhancements
 
-## Katkıda Bulunma Süreci
+## Contribution Process
 
-### 1. Bir Issue Açın
+### 1. Open an Issue
 
-Büyük değişiklikler yapmadan önce, lütfen bir GitHub Issue açın ve ne yapacağınızı açıklayın. Bu, çaba tekrarını önlemeye ve değişikliklerinizin projenin hedefleriyle uyumlu olmasını sağlamaya yardımcı olur.
+Before making significant changes, please open a GitHub Issue and explain what you plan to do. This helps prevent duplicate efforts and ensures your changes align with the project's goals.
 
-### 2. Fork ve Clone
+### 2. Fork and Clone
 
-1. Bu depoyu (repository) kendi GitHub hesabınıza fork edin
-2. Fork'unuzu yerel makinenize klonlayın:
+1. Fork this repository to your own GitHub account
+2. Clone your fork to your local machine:
    ```
-   git clone https://github.com/[kullanıcı-adınız]/context7-mcp-troubleshooting.git
+   git clone https://github.com/[your-username]/context7-mcp-troubleshooting.git
    cd context7-mcp-troubleshooting
    ```
 
-### 3. Branch Oluşturun
+### 3. Create a Branch
 
-Değişiklikleriniz için yeni bir branch oluşturun:
+Create a new branch for your changes:
 ```
-git checkout -b [branch-adı]
+git checkout -b [branch-name]
 ```
 
-Branch adınızın değişikliğinizi tanımlamasına dikkat edin, örneğin:
+Make sure your branch name describes your change, for example:
 - `feature/vscode-integration`
 - `fix/windows-path-typo`
 - `docs/linux-installation`
 
-### 4. Değişiklikleri Yapın
+### 4. Make Changes
 
-- Jekyll yapısına dikkat edin
-- Mevcut formatlamayı ve stilleri takip edin
-- Açık ve anlaşılır dokümantasyon yazın
-- Gerektiğinde ekran görüntüleri veya diyagramlar ekleyin
+- Respect the Jekyll structure
+- Follow existing formatting and styles
+- Write clear and understandable documentation
+- Include screenshots or diagrams when necessary
 
-### 5. Test Edin
+### 5. Test
 
-Değişikliklerinizi yerel olarak test edin. Jekyll ile şu şekilde bir test sunucusu çalıştırabilirsiniz:
+Test your changes locally. You can run a test server with Jekyll like this:
 
 ```
 bundle exec jekyll serve
 ```
 
-### 6. Commit ve Push
+### 6. Commit and Push
 
-Değişikliklerinizi commit edin ve branch'inizi GitHub'a push edin:
+Commit your changes and push your branch to GitHub:
 
 ```
 git add .
-git commit -m "Açıklayıcı commit mesajı"
-git push origin [branch-adı]
+git commit -m "Descriptive commit message"
+git push origin [branch-name]
 ```
 
-### 7. Pull Request Oluşturun
+### 7. Create a Pull Request
 
-GitHub'da fork'unuzdan ana depoya bir Pull Request oluşturun.
-PR açıklamanızda:
-- Değişikliklerinizin ne olduğunu açıklayın
-- İlgili Issue numarasını belirtin (varsa)
-- Hangi sorunu çözdüğünüzü veya hangi özelliği eklediğinizi belirtin
+Create a Pull Request from your fork to the main repository on GitHub.
+In your PR description:
+- Explain what your changes are
+- Reference the related Issue number (if any)
+- Specify which problem you solved or which feature you added
 
-## Kod ve Dokümantasyon Standartları
+## Code and Documentation Standards
 
-- Açık ve tutarlı Markdown formatlaması kullanın
-- Teknik terimler için tutarlı terminoloji kullanın
-- Çevrilmemesi gereken teknik terimleri İngilizce olarak bırakın
-- Komutları ve kod bloklarını kod formatında işaretleyin
-- Ekran görüntüleri eklerken net ve odaklanmış olmasına dikkat edin
+- Use clear and consistent Markdown formatting
+- Use consistent terminology for technical terms
+- Leave technical terms that shouldn't be translated in English
+- Mark commands and code blocks in code format
+- Ensure screenshots are clear and focused
 
-## Tartışmalara Katılın
+## Join Discussions
 
-Sorularınız veya önerileriniz varsa [Discussions](https://github.com/akmaster/context7-mcp-troubleshooting/discussions) bölümünü kullanarak toplulukla etkileşime geçebilirsiniz.
+If you have questions or suggestions, you can interact with the community using the [Discussions](https://github.com/akmaster/context7-mcp-troubleshooting/discussions) section.
 
-## Lisans
+## License
 
-Bu projeye katkıda bulunarak, katkılarınızı projenin [MIT Lisansı](LICENSE) altında lisansladığınızı kabul edersiniz.
+By contributing to this project, you agree to license your contributions under the project's [MIT License](LICENSE).
 
 ---
 
-Değerli katkılarınız için şimdiden teşekkür ederiz!
+Thank you in advance for your valuable contributions!
