@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="HeKurW8oUeDvU3gMMOw0Ru6P2DUgY1qAdMGkLiCdFUk" />
+    <title>Context7 MCP Configuration Examples</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #0366d6;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            background-color: #fff;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        code {
+            font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+            font-size: 85%;
+        }
+        .nav {
+            margin-bottom: 20px;
+        }
+        blockquote {
+            margin: 0;
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Home</a> | 
+        <a href="installation_guide.html">Installation Guide</a> | 
+        <a href="troubleshooting_guide.html">Troubleshooting Guide</a> | 
+        <strong>Configuration Examples</strong>
+    </div>
+    
+    <div class="content">
+        <h1>Context7 MCP Configuration Examples</h1>
+
+        <p>This document provides various configuration examples for Context7 MCP across different environments and scenarios. Use these examples as templates for your own setup.</p>
+
+        <h2>Basic Configurations</h2>
+
+        <h3>Standard Windows Configuration (Cursor)</h3>
+        <p>File location: <code>C:\Users\[username]\AppData\Roaming\Cursor\User\globalStorage\saoudrizwan.claude-dev\settings\cline_mcp_settings.json</code></p>
+        <pre><code>{
+  "mcpServers": {
+    "github.com/upstash/context7-mcp": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": ["C:\\Users\\[username]\\AppData\\Roaming\\npm\\node_modules\\@upstash\\context7-mcp\\dist\\index.js"],
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}</code></pre>
+
+        <h3>VS Code Configuration</h3>
+        <p>File location: <code>C:\Users\[username]\AppData\Roaming\Code\User\settings.json</code></p>
+        <pre><code>{
+  "mcp.servers": {
+    "Context7": {
+      "type": "stdio",
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": ["C:\\Users\\[username]\\AppData\\Roaming\\npm\\node_modules\\@upstash\\context7-mcp\\dist\\index.js"]
+    }
+  }
+}</code></pre>
+
+        <h3>Claude Desktop Configuration</h3>
+        <p>File location: <code>C:\Users\[username]\AppData\Roaming\Claude\claude_desktop_config.json</code></p>
+        <pre><code>{
+  "mcpServers": {
+    "context7": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": ["C:\\Users\\[username]\\AppData\\Roaming\\npm\\node_modules\\@upstash\\context7-mcp\\dist\\index.js"]
+    }
+  }
+}</code></pre>
+
+        <h2>Advanced Configurations</h2>
+
+        <h3>Multiple MCP Servers Configuration</h3>
+        <p>This example shows how to configure multiple MCP servers alongside Context7:</p>
+        <pre><code>{
+  "mcpServers": {
+    "github.com/upstash/context7-mcp": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": ["C:\\Users\\[username]\\AppData\\Roaming\\npm\\node_modules\\@upstash\\context7-mcp\\dist\\index.js"],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "github.com/modelcontextprotocol/servers/tree/main/src/memory": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\[username]\\AppData\\Roaming\\npm\\node_modules\\@modelcontextprotocol\\server-memory\\dist\\index.js"
+      ],
+      "env": {
+        "MEMORY_FILE_PATH": "C:\\Users\\[username]\\Documents\\MCP\\memory\\memory.json"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "create_entities",
+        "create_relations",
+        "read_graph",
+        "search_nodes"
+      ]
+    }
+  }
+}</code></pre>
+
+        <h3>Debug Mode Configuration</h3>
+        <p>Enable debug mode for troubleshooting:</p>
+        <pre><code>{
+  "mcpServers": {
+    "github.com/upstash/context7-mcp": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\[username]\\AppData\\Roaming\\npm\\node_modules\\@upstash\\context7-mcp\\dist\\index.js",
+        "--debug"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}</code></pre>
+
+        <h3>Local Development Configuration</h3>
+        <p>If you're developing a local version of the Context7 MCP:</p>
+        <pre><code>{
+  "mcpServers": {
+    "context7-dev": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": ["C:\\path\\to\\your\\local\\context7-mcp\\dist\\index.js"],
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}</code></pre>
+
+        <h2>Linux and macOS Configurations</h2>
+
+        <h3>Linux Configuration (VS Code)</h3>
+        <p>File location: <code>~/.config/Code/User/settings.json</code></p>
+        <pre><code>{
+  "mcp.servers": {
+    "Context7": {
+      "type": "stdio",
+      "command": "/usr/bin/node",
+      "args": ["/usr/local/lib/node_modules/@upstash/context7-mcp/dist/index.js"]
+    }
+  }
+}</code></pre>
+
+        <h3>macOS Configuration (Cursor)</h3>
+        <p>File location: <code>~/Library/Application Support/Cursor/User/globalStorage/saoudrizwan.claude-dev/settings/cline_mcp_settings.json</code></p>
+        <pre><code>{
+  "mcpServers": {
+    "github.com/upstash/context7-mcp": {
+      "command": "/usr/local/bin/node",
+      "args": ["/usr/local/lib/node_modules/@upstash/context7-mcp/dist/index.js"],
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}</code></pre>
+
+        <h2>Environment Variable Configuration</h2>
+
+        <h3>Using Environment Variables for Configuration</h3>
+        <p>You can add environment variables if needed:</p>
+        <pre><code>{
+  "mcpServers": {
+    "github.com/upstash/context7-mcp": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": ["C:\\Users\\[username]\\AppData\\Roaming\\npm\\node_modules\\@upstash\\context7-mcp\\dist\\index.js"],
+      "env": {
+        "NODE_ENV": "production",
+        "LOG_LEVEL": "info"
+      },
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}</code></pre>
+
+        <h2>Specific Tool Configurations</h2>
+
+        <h3>Auto-Approving Specific Tools</h3>
+        <p>Configure automatic approval for specific tools:</p>
+        <pre><code>{
+  "mcpServers": {
+    "github.com/upstash/context7-mcp": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": ["C:\\Users\\[username]\\AppData\\Roaming\\npm\\node_modules\\@upstash\\context7-mcp\\dist\\index.js"],
+      "disabled": false,
+      "autoApprove": [
+        "resolve-library-id",
+        "get-library-docs"
+      ]
+    }
+  }
+}</code></pre>
+
+        <h2>Notes on Configuration</h2>
+        <ul>
+            <li>Always use double backslashes (<code>\\</code>) in Windows file paths in JSON</li>
+            <li>Replace <code>[username]</code> with your actual Windows username</li>
+            <li>You may need to adjust paths depending on your specific Node.js installation</li>
+            <li>Always restart your application after making configuration changes</li>
+            <li>The <code>disabled</code> field can be set to <code>true</code> to temporarily disable a server without removing its configuration</li>
+        </ul>
+      
+        <p>For troubleshooting configuration issues, refer to the <a href="troubleshooting_guide.html">Troubleshooting Guide</a>.</p>
+        
+        <p>
+            <a href="https://github.com/akmaster/context7-mcp-troubleshooting">View on GitHub</a>
+        </p>
+    </div>
+</body>
+</html>
