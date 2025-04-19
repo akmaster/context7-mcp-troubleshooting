@@ -84,7 +84,7 @@ permalink: /search/
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Fetch search index
-  fetch('/search.json')
+  fetch('{{ "/search.json" | relative_url }}')
     .then(response => response.json())
     .then(data => {
       const searchInput = document.getElementById('search-input');
