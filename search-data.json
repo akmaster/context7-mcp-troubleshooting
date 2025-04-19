@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Context7 MCP: Installation and Troubleshooting Guide",
+    "url": "/",
+    "tags": "context7, mcp, guide, documentation, installation, troubleshooting, configuration"
+  },
+  {
+    "title": "Context7 MCP Installation Guide",
+    "url": "/installation-guide/",
+    "tags": "installation, setup, context7, mcp, nodejs, npm, cursor, vscode, windows"
+  },
+  {
+    "title": "Context7 MCP Troubleshooting Guide",
+    "url": "/troubleshooting-guide/",
+    "tags": "troubleshooting, errors, context7, mcp, spawn-einval, not-connected, nodejs, windows, permission"
+  },
+  {
+    "title": "Context7 MCP Configuration Examples",
+    "url": "/configuration-examples/",
+    "tags": "configuration, examples, context7, mcp, cursor, vscode, windows, linux, macos, environment-variables"
+  },
+  {
+    "title": "Windows - Context7 MCP Solutions",
+    "url": "/tags/windows/",
+    "tags": "windows"
+  },
+  {
+    "title": "Cursor - Context7 MCP Integration",
+    "url": "/tags/cursor/",
+    "tags": "cursor"
+  },
+  {
+    "title": "VS Code - Context7 MCP Integration",
+    "url": "/tags/vscode/",
+    "tags": "vscode"
+  },
+  {
+    "title": "Spawn EINVAL Error - Context7 MCP Troubleshooting",
+    "url": "/tags/spawn-einval/",
+    "tags": "spawn-einval"
+  },
+  {
+    "title": "Not Connected Error - Context7 MCP Troubleshooting",
+    "url": "/tags/not-connected/",
+    "tags": "not-connected"
+  },
+  {
+    "title": "Linux - Context7 MCP Solutions",
+    "url": "/tags/linux/",
+    "tags": "linux"
+  },
+  {
+    "title": "macOS - Context7 MCP Solutions",
+    "url": "/tags/macos/",
+    "tags": "macos"
+  }
+]
