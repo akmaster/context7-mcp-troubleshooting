@@ -1,0 +1,56 @@
+<header class="site-header">
+  <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="{{ '/' | relative_url }}">Ana Sayfa</a></li>
+      <li><a href="{{ '/installation-guide/' | relative_url }}">Kurulum Rehberi</a></li>
+      <li><a href="{{ '/troubleshooting-guide/' | relative_url }}">Sorun Giderme</a></li>
+      <li><a href="{{ '/configuration-examples/' | relative_url }}">Yapılandırma Örnekleri</a></li>
+      <li><a href="{{ '/tags/' | relative_url }}">Etiketler</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 1rem;
+  }
+  .site-title {
+    margin-bottom: 0.5rem;
+  }
+  .site-title a {
+    color: #0366d6;
+    text-decoration: none;
+  }
+  .site-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .site-nav li {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .site-nav a {
+    color: #586069;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+  }
+  .site-nav a:hover {
+    background-color: #f6f8fa;
+    color: #0366d6;
+  }
+  @media (max-width: 600px) {
+    .site-nav ul {
+      flex-direction: column;
+    }
+    .site-nav li {
+      margin-bottom: 0.5rem;
+    }
+  }
+</style>

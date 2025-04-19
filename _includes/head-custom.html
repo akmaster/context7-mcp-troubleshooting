@@ -1,0 +1,55 @@
+<!-- Favicons ve diğer özel head içerikleri -->
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicon/apple-touch-icon.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon/favicon-32x32.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon/favicon-16x16.png' | relative_url }}">
+<link rel="manifest" href="{{ '/assets/favicon/site.webmanifest' | relative_url }}">
+
+<!-- Tag ve etiket stili -->
+<style>
+  .tag-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .tag-list li {
+    margin: 0;
+  }
+  
+  .tag-list a {
+    display: inline-block;
+    background-color: #f6f8fa;
+    color: #0366d6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .tag-list a:hover {
+    background-color: #0366d6;
+    color: white;
+  }
+  
+  .tag-cloud {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f6f8fa;
+    border-radius: 6px;
+  }
+  
+  .tag-cloud a {
+    display: inline-block;
+    margin-right: 0.75rem;
+    margin-bottom: 0.5rem;
+    color: #0366d6;
+    text-decoration: none;
+  }
+  
+  .tag-cloud a:hover {
+    text-decoration: underline;
+  }
+</style>

@@ -1,0 +1,26 @@
+<footer class="site-footer">
+  <div class="site-footer-content">
+    <p>&copy; {{ site.time | date: '%Y' }} - {{ site.author }}. Tüm hakları saklıdır.</p>
+    <p>
+      <a href="{{ site.github.repository_url }}">GitHub'da Görüntüle</a> |
+      <a href="{{ site.github.repository_url }}/issues">Sorun Bildir</a>
+    </p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eaecef;
+    color: #586069;
+    font-size: 0.85rem;
+  }
+  .site-footer a {
+    color: #0366d6;
+    text-decoration: none;
+  }
+  .site-footer a:hover {
+    text-decoration: underline;
+  }
+</style>
