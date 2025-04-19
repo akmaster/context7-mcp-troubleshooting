@@ -1,57 +1,57 @@
 [
   {
     "title": "Context7 MCP: Installation and Troubleshooting Guide",
-    "url": "/",
+    "url": "/context7-mcp-troubleshooting/",
     "tags": "context7, mcp, guide, documentation, installation, troubleshooting, configuration"
   },
   {
     "title": "Context7 MCP Installation Guide",
-    "url": "/installation-guide/",
+    "url": "/context7-mcp-troubleshooting/installation-guide/",
     "tags": "installation, setup, context7, mcp, nodejs, npm, cursor, vscode, windows"
   },
   {
     "title": "Context7 MCP Troubleshooting Guide",
-    "url": "/troubleshooting-guide/",
+    "url": "/context7-mcp-troubleshooting/troubleshooting-guide/",
     "tags": "troubleshooting, errors, context7, mcp, spawn-einval, not-connected, nodejs, windows, permission"
   },
   {
     "title": "Context7 MCP Configuration Examples",
-    "url": "/configuration-examples/",
+    "url": "/context7-mcp-troubleshooting/configuration-examples/",
     "tags": "configuration, examples, context7, mcp, cursor, vscode, windows, linux, macos, environment-variables"
   },
   {
     "title": "Windows - Context7 MCP Solutions",
-    "url": "/tags/windows/",
+    "url": "/context7-mcp-troubleshooting/tags/windows/",
     "tags": "windows"
   },
   {
     "title": "Cursor - Context7 MCP Integration",
-    "url": "/tags/cursor/",
+    "url": "/context7-mcp-troubleshooting/tags/cursor/",
     "tags": "cursor"
   },
   {
     "title": "VS Code - Context7 MCP Integration",
-    "url": "/tags/vscode/",
+    "url": "/context7-mcp-troubleshooting/tags/vscode/",
     "tags": "vscode"
   },
   {
     "title": "Spawn EINVAL Error - Context7 MCP Troubleshooting",
-    "url": "/tags/spawn-einval/",
+    "url": "/context7-mcp-troubleshooting/tags/spawn-einval/",
     "tags": "spawn-einval"
   },
   {
     "title": "Not Connected Error - Context7 MCP Troubleshooting",
-    "url": "/tags/not-connected/",
+    "url": "/context7-mcp-troubleshooting/tags/not-connected/",
     "tags": "not-connected"
   },
   {
     "title": "Linux - Context7 MCP Solutions",
-    "url": "/tags/linux/",
+    "url": "/context7-mcp-troubleshooting/tags/linux/",
     "tags": "linux"
   },
   {
     "title": "macOS - Context7 MCP Solutions",
-    "url": "/tags/macos/",
+    "url": "/context7-mcp-troubleshooting/tags/macos/",
     "tags": "macos"
   }
 ]
