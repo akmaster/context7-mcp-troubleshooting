@@ -1,0 +1,62 @@
+title: "Tips & Tricks"
+labels: ["tips", "tricks"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Share Your Context7 MCP Tips & Tricks
+        
+        Use this template to share helpful solutions, optimizations, or workarounds for Context7 MCP.
+        
+  - type: textarea
+    id: tip-title
+    attributes:
+      label: Title of Your Tip
+      description: Provide a concise title that describes your tip or trick
+      placeholder: e.g., "Faster Context7 MCP loading with caching"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: tip-description
+    attributes:
+      label: Description
+      description: Explain your tip or trick in detail
+      placeholder: |
+        Provide a detailed explanation of your tip, including:
+        - What problem it solves
+        - How to implement it
+        - Any potential limitations or considerations
+    validations:
+      required: true
+      
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: In which environments does this tip work?
+      placeholder: |
+        - Operating Systems: [e.g., Windows, macOS, Linux, All]
+        - Applications: [e.g., Cursor, VS Code, Claude Desktop, All]
+        - Context7 MCP versions: [e.g., 1.0.x and above]
+    validations:
+      required: false
+      
+  - type: textarea
+    id: code-examples
+    attributes:
+      label: Code Examples or Configurations
+      description: Share any code snippets or configuration examples
+      placeholder: |
+        ```json
+        // Example configuration:
+        {
+          "mcpServers": {
+            "github.com/upstash/context7-mcp": {
+              // Your optimized configuration here
+            }
+          }
+        }
+        ```
+    validations:
+      required: false

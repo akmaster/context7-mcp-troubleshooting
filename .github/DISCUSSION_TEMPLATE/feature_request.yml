@@ -1,0 +1,45 @@
+title: "Feature Request"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Suggest a new feature or improvement for the Context7 MCP documentation
+        
+        Use this template to suggest new content, examples, or improvements for the Context7 MCP Troubleshooting Guide.
+        
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Describe the feature or improvement you'd like to see
+      placeholder: A clear and concise description of what you want to see added or changed...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: problem-solved
+    attributes:
+      label: Problem This Solves
+      description: What problem or gap would this feature address?
+      placeholder: Explain what issue this solves or how it would help Context7 MCP users...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: How would you implement this feature?
+      placeholder: Share any ideas you have about how to implement this feature or improvement...
+    validations:
+      required: false
+      
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other context or screenshots about the feature request
+      placeholder: Add any other relevant information, links, or screenshots here...
+    validations:
+      required: false

@@ -1,0 +1,28 @@
+# Discussion categories for the repository
+# For more information see:
+# https://docs.github.com/en/discussions/managing-discussions-for-your-community/managing-categories-for-discussions
+
+categories:
+  - name: Announcements
+    description: Important updates from the maintainers
+    emoji: 📢
+    
+  - name: Questions & Help
+    description: Ask for help with Context7 MCP issues
+    emoji: ❓
+    
+  - name: Tips & Tricks
+    description: Share helpful tips and workarounds
+    emoji: 💡
+    
+  - name: General
+    description: General discussions about Context7 MCP
+    emoji: 💬
+    
+  - name: Feature Requests
+    description: Suggest improvements to the documentation
+    emoji: 🚀
+    
+  - name: Show and Tell
+    description: Share your Context7 MCP projects and implementations
+    emoji: 🎭

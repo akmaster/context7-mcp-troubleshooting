@@ -1,0 +1,18 @@
+title: "General Discussion"
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Welcome to Context7 MCP Troubleshooting Discussions!
+        
+        Use this template for general discussions about Context7 MCP.
+        
+  - type: textarea
+    id: topic
+    attributes:
+      label: Discussion Topic
+      description: What would you like to discuss with the community?
+      placeholder: Share your thoughts or start a conversation about Context7 MCP...
+    validations:
+      required: true

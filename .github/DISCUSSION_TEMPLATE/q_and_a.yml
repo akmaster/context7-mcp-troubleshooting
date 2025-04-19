@@ -1,0 +1,52 @@
+title: "Question & Help"
+labels: ["question", "help"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Need help with Context7 MCP?
+        
+        Use this template to ask questions about installation, configuration, or troubleshooting Context7 MCP.
+        
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: What do you need help with?
+      description: Describe the issue you're facing with Context7 MCP
+      placeholder: Provide a clear description of your problem...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      description: Information about your system and setup
+      placeholder: |
+        - Operating System: [e.g., Windows 11, macOS, Ubuntu]
+        - Node.js version: [e.g., 18.16.0]
+        - Application: [e.g., Cursor, VS Code, Claude Desktop]
+        - Context7 MCP version: [e.g., 1.0.4]
+    validations:
+      required: true
+      
+  - type: textarea
+    id: error-messages
+    attributes:
+      label: Error Messages
+      description: Include any error messages or logs
+      placeholder: |
+        ```
+        Paste error messages or logs here
+        ```
+    validations:
+      required: false
+      
+  - type: textarea
+    id: steps-tried
+    attributes:
+      label: Steps Already Tried
+      description: What have you already tried to solve the problem?
+      placeholder: List any troubleshooting steps you've already attempted...
+    validations:
+      required: false
