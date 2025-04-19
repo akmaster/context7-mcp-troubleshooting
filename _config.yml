@@ -1,0 +1,35 @@
+title: Context7 MCP Troubleshooting Guide
+description: Installation and troubleshooting guide for Context7 MCP server in Windows environments
+theme: jekyll-theme-cayman
+
+# Google verification
+google_site_verification: BGzB5Coh-IGGBml2qXVzsgLMwNQ3LQ2NSrP7V0IGVDI
+
+# Social media and repository information
+author: akmaster
+github:
+  repository_url: https://github.com/akmaster/context7-mcp-troubleshooting
+
+# SEO enhancements
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Default front matter settings
+defaults:
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: default
+
+# Navigation menu
+navigation:
+  - title: Home
+    url: /
+  - title: Installation Guide
+    url: /installation-guide
+  - title: Troubleshooting Guide
+    url: /troubleshooting-guide
+  - title: Configuration Examples
+    url: /configuration-examples
