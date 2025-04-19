@@ -1,0 +1,145 @@
+---
+layout: default
+title: "Arama"
+permalink: /search/
+---
+
+<h1>Site İçi Arama</h1>
+
+<div id="search-container">
+  <input type="text" id="search-input" placeholder="Arama terimini yazın..." aria-label="Arama terimini yazın" autofocus>
+  <div id="search-results" class="search-results-list"></div>
+</div>
+
+<style>
+  #search-container {
+    margin: 2rem 0;
+  }
+  
+  #search-input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    color: #f0f0f0;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  #search-input:focus {
+    outline: none;
+    border-color: #63c0f5;
+    box-shadow: 0 0 5px rgba(99, 192, 245, 0.5);
+  }
+  
+  .search-results-list {
+    margin-top: 1.5rem;
+  }
+  
+  .search-result-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed #444;
+  }
+  
+  .search-result-item:last-child {
+    border-bottom: none;
+  }
+  
+  .search-result-title {
+    color: #b5e853;
+    margin-bottom: 0.3rem;
+  }
+  
+  .search-result-info {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .search-result-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .search-result-tag {
+    background-color: rgba(181, 232, 83, 0.1);
+    color: #b5e853;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+  }
+  
+  .no-results {
+    padding: 1rem;
+    background-color: rgba(255, 0, 0, 0.1);
+    border-radius: 4px;
+    color: #ff8080;
+  }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Fetch search index
+  fetch('/search.json')
+    .then(response => response.json())
+    .then(data => {
+      const searchInput = document.getElementById('search-input');
+      const searchResults = document.getElementById('search-results');
+      const searchData = data;
+      
+      searchInput.addEventListener('keyup', function() {
+        const searchTerm = this.value.trim().toLowerCase();
+        
+        if (searchTerm.length < 2) {
+          searchResults.innerHTML = '';
+          return;
+        }
+        
+        // Filter results
+        const results = searchData.filter(item => {
+          const titleMatch = item.title && item.title.toLowerCase().includes(searchTerm);
+          const tagMatch = item.tags && item.tags.toLowerCase().includes(searchTerm);
+          return titleMatch || tagMatch;
+        });
+        
+        // Display results
+        if (results.length > 0) {
+          let resultsHTML = '';
+          
+          results.forEach(result => {
+            let tagsHTML = '';
+            if (result.tags) {
+              const tagArray = result.tags.split(',').map(tag => tag.trim());
+              tagsHTML = '<div class="search-result-tags">' + 
+                tagArray.map(tag => `<span class="search-result-tag">${tag}</span>`).join('') +
+                '</div>';
+            }
+            
+            resultsHTML += `
+              <div class="search-result-item">
+                <h3 class="search-result-title"><a href="${result.url}">${result.title}</a></h3>
+                <div class="search-result-info">
+                  ${result.category ? `<span>${result.category}</span>` : ''}
+                </div>
+                ${tagsHTML}
+              </div>
+            `;
+          });
+          
+          searchResults.innerHTML = resultsHTML;
+        } else {
+          searchResults.innerHTML = '<div class="no-results">Sonuç bulunamadı</div>';
+        }
+      });
+    })
+    .catch(error => {
+      console.error('Arama verisi yüklenirken bir hata oluştu:', error);
+      document.getElementById('search-results').innerHTML = 
+        '<div class="no-results">Arama verisi yüklenirken bir hata oluştu.</div>';
+    });
+});
+</script>

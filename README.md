@@ -1,7 +1,12 @@
+<!-- <meta name="google-site-verification" content="HeKurW8oUeDvU3gMMOw0Ru6P2DUgY1qAdMGkLiCdFUk" /> -->
+
 # Context7 MCP: Installation and Troubleshooting Guide
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
+[![Pages Status](https://img.shields.io/github/deployments/akmaster/context7-mcp-troubleshooting/github-pages?label=pages)](https://akmaster.github.io/context7-mcp-troubleshooting/)
+[![Last Commit](https://img.shields.io/github/last-commit/akmaster/context7-mcp-troubleshooting)](https://github.com/akmaster/context7-mcp-troubleshooting/commits/main)
+[![Discussions](https://img.shields.io/github/discussions/akmaster/context7-mcp-troubleshooting)](https://github.com/akmaster/context7-mcp-troubleshooting/discussions)
 
 A comprehensive guide for installing, configuring, and troubleshooting the Context7 MCP (Model Context Protocol) server for AI coding assistants. This guide addresses common issues and provides step-by-step solutions for Windows environments.
 
