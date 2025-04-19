@@ -1,0 +1,88 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Dark mode overrides */
+body {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.markdown-body {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+}
+
+a {
+  color: #58a6ff;
+}
+
+a:hover {
+  color: #79c0ff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #79c0ff;
+}
+
+code, pre {
+  background-color: #363636;
+}
+
+pre {
+  border-color: #444;
+}
+
+.site-header {
+  border-bottom: 1px solid #444;
+}
+
+.site-footer {
+  border-top: 1px solid #444;
+  color: #a0a0a0;
+}
+
+.site-nav a {
+  color: #a0a0a0;
+}
+
+.site-nav a:hover {
+  background-color: #363636;
+  color: #58a6ff;
+}
+
+.site-title a {
+  color: #79c0ff;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #444;
+}
+
+table th {
+  background-color: #363636;
+}
+
+blockquote {
+  border-left: 0.25em solid #444;
+  color: #a0a0a0;
+}
+
+.tag-cloud {
+  background-color: #363636;
+}
+
+.tag-list a {
+  background-color: #363636;
+  color: #58a6ff;
+}
+
+.tag-list a:hover {
+  background-color: #58a6ff;
+  color: #1e1e1e;
+}
