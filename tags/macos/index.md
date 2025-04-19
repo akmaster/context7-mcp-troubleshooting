@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: "macOS - Context7 MCP Çözümleri"
+title: "macOS - Context7 MCP Solutions"
 tag: macos
 permalink: /tags/macos/
 ---

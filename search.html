@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "Arama"
+title: "Search"
 permalink: /search/
 ---
 
-<h1>Site İçi Arama</h1>
+<h1>Site Search</h1>
 
 <div id="search-container">
-  <input type="text" id="search-input" placeholder="Arama terimini yazın..." aria-label="Arama terimini yazın" autofocus>
+  <input type="text" id="search-input" placeholder="Enter search term..." aria-label="Enter search term" autofocus>
   <div id="search-results" class="search-results-list"></div>
 </div>
 
@@ -132,14 +132,14 @@ document.addEventListener('DOMContentLoaded', function() {
           
           searchResults.innerHTML = resultsHTML;
         } else {
-          searchResults.innerHTML = '<div class="no-results">Sonuç bulunamadı</div>';
+          searchResults.innerHTML = '<div class="no-results">No results found</div>';
         }
       });
     })
     .catch(error => {
-      console.error('Arama verisi yüklenirken bir hata oluştu:', error);
+      console.error('Error loading search data:', error);
       document.getElementById('search-results').innerHTML = 
-        '<div class="no-results">Arama verisi yüklenirken bir hata oluştu.</div>';
+        '<div class="no-results">Error loading search data.</div>';
     });
 });
 </script>

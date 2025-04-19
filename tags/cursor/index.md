@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: "Cursor - Context7 MCP Entegrasyonu"
+title: "Cursor - Context7 MCP Integration"
 tag: cursor
 permalink: /tags/cursor/
 ---

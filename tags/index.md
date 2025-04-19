@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Etiketler"
+title: "Tags"
 permalink: /tags/
 ---
 
-# İçerik Etiketleri
+# Content Tags
 
-Rehberleri konulara göre keşfedin:
+Explore guides by topics:
 
 <div class="tag-cloud">
   {% assign tags = site.tags | sort %}
@@ -18,7 +18,7 @@ Rehberleri konulara göre keşfedin:
   {% endfor %}
 </div>
 
-## Tüm Etiketler
+## All Tags
 
 <ul class="tag-list">
   {% for tag in site.tags %}
@@ -30,26 +30,26 @@ Rehberleri konulara göre keşfedin:
   {% endfor %}
 </ul>
 
-## Konu Başlıkları
+## Topics
 
-### Kurulum ve Yapılandırma
+### Installation and Configuration
 
-- [Kurulum Rehberi]({{ '/installation-guide/' | relative_url }})
-- [Yapılandırma Örnekleri]({{ '/configuration-examples/' | relative_url }})
+- [Installation Guide]({{ '/installation-guide/' | relative_url }})
+- [Configuration Examples]({{ '/configuration-examples/' | relative_url }})
 
-### Sorun Giderme
+### Troubleshooting
 
-- [Sorun Giderme Rehberi]({{ '/troubleshooting-guide/' | relative_url }})
-- [Spawn EINVAL Hatası]({{ '/tags/spawn-einval/' | relative_url }})
-- [Not Connected Hatası]({{ '/tags/not-connected/' | relative_url }})
+- [Troubleshooting Guide]({{ '/troubleshooting-guide/' | relative_url }})
+- [Spawn EINVAL Error]({{ '/tags/spawn-einval/' | relative_url }})
+- [Not Connected Error]({{ '/tags/not-connected/' | relative_url }})
 
-### İşletim Sistemleri
+### Operating Systems
 
 - [Windows]({{ '/tags/windows/' | relative_url }})
 - [Linux]({{ '/tags/linux/' | relative_url }})
 - [macOS]({{ '/tags/macos/' | relative_url }})
 
-### Uygulamalar
+### Applications
 
 - [Cursor]({{ '/tags/cursor/' | relative_url }})
 - [VS Code]({{ '/tags/vscode/' | relative_url }})
